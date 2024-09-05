@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Akaya_Telivigala} from "next/font/google";
 import "./globals.css";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const akaya = Akaya_Telivigala({
+  weight: "400",
+  style: "normal",
+  subsets: ['latin']
+})
 
 export const metadata: Metadata = {
-  title: "Desafio Next.JS 2024.2",
-  description: "Desafio Next.JS, Typescript, Tailinwd, Prisma, semestre 2024.2 para todos os membros da Code JR",
+  title: "Torcida Mista",
+  description: "A casa de todo Torcedor!",
 };
 
 export default function RootLayout({
@@ -16,7 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={akaya.className}>
+        <Header />
+        {children}
+        <Footer />
+        </body>
     </html>
   );
 }
