@@ -2,7 +2,7 @@ import AboutUsCard from "./card";
 
 export default function AboutUs() {
     return (
-        <div className="flex flex-col lg:flex-row justify-center lg:py-40 lg:px-[30px] lg:gap-[120px]">
+        <div className="flex flex-col lg:flex-row items-center gap-[70px] py-[70px] justify-center lg:py-40 lg:px-[30px] lg:gap-[120px]">
             <AboutUsCard
             title="Missão"
             description="oi"

@@ -13,8 +13,8 @@ const links = [
 export default function Header()
 {
     return(
-        <header className="bg-black sticky top-0 z-20 w-full mx-auto h-20 py-8 px-4 md:p-0">
-            <div className="flex flex-wrap items-center justify-center w-full h-20 mx-auto gap-8">
+        <header className="bg-black sticky top-0 z-20 w-full mx-auto md:p-0">
+            <div className="flex flex-wrap items-center justify-between w-full md:w-10/12 mx-auto px-4">
             <Link href='/' className="flex gap-4 items-center">
                 <Image
                 src={'/logo.png'}
@@ -23,20 +23,20 @@ export default function Header()
                 height = {904}
                 className = "h-14 w-14"
                 />
+            <span className="text-white hidden lg:block text-3xl">Torcida Mista</span>
                 </Link>
-            <span className="text-white hidden md:block text-3xl font-semibold">Torcida Mista</span>
             <nav className="flex justify-end">
-                <div className="hidden w-full md:flex justify-end items-center gap-16">
+                <div className="hidden w-full lg:flex justify-end items-center gap-16">
                     {links.map((link, index) => 
                     <Link href = {link.href} key={index}>
                         <span className="text-white text-2xl p-2 rounded-xl">{link.label}</span>
                     </Link>
                     )}
                 </div>
-                <div className="md:hidden">
-                    <div className="flex gap-4">
-                        <Menu />
-                    </div>
+                <div className="lg:hidden">
+                        <Menu 
+                        className="w-12 h-12 text-white cursor-pointer hover:bg-white/20 transition-all duration-200 p-1 rounded-xl"
+                        />
                 </div>
             </nav>
             </div>

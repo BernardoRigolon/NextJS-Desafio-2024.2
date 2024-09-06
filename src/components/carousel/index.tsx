@@ -1,3 +1,5 @@
+'use client'
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -5,9 +7,10 @@ import Image from 'next/image';
 
 export default () => {
   return (
-    <div>
+    <div className="hidden lg:block">
     <Swiper
-      slidesPerView={5}
+    spaceBetween={0}
+      slidesPerView={4.5}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
@@ -74,7 +77,7 @@ export default () => {
     className="w-[300px] h-[300px]"
     />
       </SwiperSlide>
-      ...
+
     </Swiper>
     </div>
   );
