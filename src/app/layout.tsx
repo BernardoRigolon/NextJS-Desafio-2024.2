@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Akaya_Telivigala} from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
 
 const akaya = Akaya_Telivigala({
   weight: "400",
@@ -23,9 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={akaya.className}>
-        <Header />
         {children}
-        <Footer />
         </body>
     </html>
   );
