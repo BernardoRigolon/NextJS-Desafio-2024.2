@@ -2,8 +2,8 @@ export default function Management() {
     return (
         <div className="w-full flex flex-col items-center py-20">
             <table className="w-5/6">           
-            <thead>
-            <tr className="flex w-full py-7 px-20 justify-between lg:text-4xl text-[#D5D918] border-black border-[5px]">
+            <thead className="w-full border-black border-[5px]">
+            <tr className="flex w-full py-7 px-20 justify-between lg:text-4xl text-[#D5D918]">
             <th scope="col">ID</th>
             <th scope="col">Nome</th>
             <th scope="col">Preço</th>
