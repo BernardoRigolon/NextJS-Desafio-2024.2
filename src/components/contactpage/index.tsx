@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ContactPage() {
     return (
         <div className="flex flex-col w-full items-center gap-9 py-16">
@@ -11,6 +13,14 @@ export default function ContactPage() {
                 <input className="bg-[#E3E3E3] w-5/6 h-[50px] border border-black placeholder:italic placeholder:text-black p-2" placeholder="Mensagem" type="text" name="mensagem"></input>
                 <div className="py-10 w-full flex flex-col items-center">
                 <button className="bg-[#D5D918] w-5/6 h-[50px] text-black text-3xl border border-black">Entre em Contato</button>
+                </div>
+            </div>
+            <div className="text-center text-white pt-10">
+                <h1 className="text-2xl md:text-3xl">Outras Formas de Nos Encontrar</h1>
+                <div className="flex flex-col text-xl md: text-2xl gap-5 py-5">
+                    <span>Telefone: (32)987654321</span>
+                    <span>Email: email@gmail.com</span>
+                    <span>Instagram: @codejr</span>
                 </div>
             </div>
         </div>

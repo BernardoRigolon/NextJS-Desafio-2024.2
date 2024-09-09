@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
     return(
@@ -15,7 +16,8 @@ export default function Footer() {
             <span className="text-[#A6A6A6] text-base lg:text-xl">2024 - 2024 Torcida Mista. Todos os direitos reservados. Desenvolvido por CODEJR</span>
             </div>
             <ul className="h-60 w-48 hidden lg:block">
-                <li>
+                <li className="flex justify-center">
+                <Link href={'https://www.instagram.com/codejr/'}>
                 <Image
             src = {'/ig.png'}
             alt = 'Instagram'
@@ -23,24 +25,29 @@ export default function Footer() {
             height={720}
             className="h-20 w-20"
             />
+                </Link>
                 </li>
-                <li>
+                <li className="flex justify-center">
+                <Link href={'https://www.facebook.com/codeempresajunior/?locale=pt_BR'}>
                 <Image
             src = {'/face.png'}
             alt = 'Facebook'
             width={720}
             height={720}
-            className="h-32 w-32 z-30"
+            className="h-20 w-20 z-30"
             />
+                </Link>
                 </li>
-                <li>
+                <li className="flex justify-center">
+                <Link href={'https://twitter.com/codejr'}>
                 <Image
             src = {'/tt.png'}
             alt = 'Twitter'
             width={720}
             height={720}
-            className="h-16 w-16"
+            className="h-20 w-20"
             />
+                </Link>
                 </li>
             </ul>
         </div>

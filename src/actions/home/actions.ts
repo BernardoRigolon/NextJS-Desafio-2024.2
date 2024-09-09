@@ -11,7 +11,7 @@ export default async function getCard() {
             image: true,
             price: true
         },
-        take: 3
+        take: 6
     });
 
     return posts;
