@@ -37,9 +37,9 @@ export default async function EditPage({post}: {post: IndivCard}) {
                 defaultValue={post?.image}
                                 className="placeholder:text-black text-2xl"
                 />
-                                <button className="w-full lg:w-6/12 xl:w-3/12 2xl:w-2/12 bg-sky-600 hover:bg-sky-700 text-white rounded-md px-6 py-2">
-                        Editar
-                    </button>
+                <div className="w-full flex justify-center">
+                <button className="bg-black w-1/3 text-center border-black border p-1 md:p-2.5 text-4xl rounded-xl text-white cursor-pointer hover:bg-black/50 transition-all duration-200">Editar</button>
+                </div>
             </form>
         </div>
     )

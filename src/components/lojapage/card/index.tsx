@@ -22,19 +22,19 @@ export default function LojaCard({posetax}: {posetax: Card})
 
     return (
         <div className="bg-[#D9D9D9] w-80 border-black border-[10px]">
-            <Link href={`/post/${posetax.id}`}>
+            <Link href={`/post/${posetax?.id}`}>
             <Image 
-            src = {posetax.image}
-            alt = {posetax.title}
+            src = {posetax?.image}
+            alt = {posetax?.title}
             width={900}
             height={900}
             className="w-[300px] h-[300px]"
             />
             </Link>
             <div className="py-3 px-6">
-                <p className="text-xl text-center py-3">{posetax.title}</p>
+                <p className="text-xl text-center py-3">{posetax?.title}</p>
                 <span className="flex items-center justify-end gap-14">
-                    <h1 className="text-4xl text-center pb-4">{posetax.price}</h1>
+                    <h1 className="text-4xl text-center pb-4">R$ {posetax?.price}</h1>
                     {isNavOpen ?
                     <Minus 
                     onClick={toggleNavO}
@@ -52,8 +52,8 @@ export default function LojaCard({posetax}: {posetax: Card})
                 {isNavOpen && (
                     <div className="flex flex-col py-5 gap-y-5">
                         <span className="text-2xl">Detalhes:</span>
-                        <span className="text-xl">{posetax.description}</span>
-                        <Link href={`/post/${posetax.id}`} className="justify-center flex">
+                        <span className="text-xl">{posetax?.description}</span>
+                        <Link href={`/post/${posetax?.id}`} className="justify-center flex">
                         <button className="bg-black w-5/6 text-center border-black border p-2.5 text-3xl rounded-xl text-white cursor-pointer hover:bg-black/50 transition-all duration-200">Ver Mais</button>
                         </Link>
                     </div>
