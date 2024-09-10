@@ -15,13 +15,15 @@ export default function ContactPage() {
                 <button className="bg-[#D5D918] w-5/6 h-[50px] text-black text-3xl border border-black">Entre em Contato</button>
                 </div>
             </div>
-            <div className="text-center text-white pt-10">
-                <h1 className="text-2xl md:text-3xl">Outras Formas de Nos Encontrar</h1>
-                <div className="flex flex-col text-xl md: text-2xl gap-5 py-5">
+            <div className="flex justify-center">
+            <div className="text-center text-white pt-10 w-5/6">
+                <h1 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl">Outras Formas de Nos Encontrar</h1>
+                <div className="flex flex-col text-xl md: text-2xl gap-5 py-5 xl:text-4xl 2xl:text-5xl">
                     <span>Telefone: (32)987654321</span>
                     <span>Email: email@gmail.com</span>
                     <span>Instagram: @codejr</span>
                 </div>
+            </div>
             </div>
         </div>
     )

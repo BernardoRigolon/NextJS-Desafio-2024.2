@@ -46,7 +46,7 @@ export default function LojaPage({posetaxs, count, totalPages}: {posetaxs: Card[
                 </span>
                 </form>
                 </div>
-        <div className="flex flex-col md:flex-row justify-center items-center flex-wrap gap-[50px] md:gap-[115px]">
+        <div className="flex flex-col md:flex-row justify-center items-center flex-wrap gap-[50px] md:gap-[80px] lg:gap-[115px]">
         {posetaxs.map((posetax,index)=>(
                     <LojaCard key={index} posetax={posetax} />
                 ))}

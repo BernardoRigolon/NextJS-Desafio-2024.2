@@ -34,7 +34,7 @@ export default function LojaCard({posetax}: {posetax: Card})
             <div className="py-3 px-6">
                 <p className="text-xl text-center py-3">{posetax.title}</p>
                 <span className="flex items-center justify-end gap-14">
-                    <h1 className="text-4xl text-center">{posetax.price}</h1>
+                    <h1 className="text-4xl text-center pb-4">{posetax.price}</h1>
                     {isNavOpen ?
                     <Minus 
                     onClick={toggleNavO}

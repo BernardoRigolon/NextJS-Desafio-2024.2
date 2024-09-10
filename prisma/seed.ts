@@ -5,74 +5,74 @@ const prisma = new PrismaClient();
 async function main() {
   const products = [
     {
-      title: 'Wireless Mouse',
+      title: 'Camisa Japão 2 2022',
       description: 'A smooth and responsive wireless mouse.',
       price: 29.99,
       createdAt: new Date(),
-      image: '/camisajapao.png'
+      image: '/japaobranca.png'
     },
     {
-      title: 'Mechanical Keyboard',
+      title: 'Camisa Japão 1 2022',
       description: 'A durable mechanical keyboard with RGB lighting.',
       price: 89.99,
       createdAt: new Date(),
-      image: '/camisajapao.png'
+      image: '/japaoazul.png'
     },
     {
-      title: 'Noise Cancelling Headphones',
+      title: 'Camisa Fluminense 1 2019',
       description: 'Comfortable headphones with active noise cancelling.',
       price: 199.99,
       createdAt: new Date(),
-      image: '/camisajapao.png'
+      image: '/flu.png'
     },
     {
-      title: '4K Monitor',
+      title: 'Camisa Napoli 1 23/24',
       description: 'A high-resolution 4K monitor for professional use.',
       price: 399.99,
       createdAt: new Date(),
-      image: '/camisajapao.png'
+      image: '/napoli.png'
     },
     {
-      title: 'USB-C Hub',
+      title: 'Camisa Tupi 1 2019',
       description: 'A versatile USB-C hub with multiple ports.',
       price: 49.99,
       createdAt: new Date(),
-      image: '/camisajapao.png'
+      image: '/tupi.png'
     },
     {
-      title: 'Portable SSD',
+      title: 'Camisa Fluminense 3 2023',
       description: 'A fast and portable SSD with 1TB capacity.',
       price: 129.99,
       createdAt: new Date(),
-      image: '/camisajapao.png'
+      image: '/flucartola.png'
     },
     {
-      title: 'Bluetooth Speaker',
+      title: 'Camisa Mexico 2 2022',
       description: 'A compact Bluetooth speaker with excellent sound quality.',
       price: 59.99,
       createdAt: new Date(),
-      image: '/camisajapao.png'
+      image: '/mexico.png'
     },
     {
-      title: 'Smartwatch',
+      title: 'Camisa Barcelona 1 22/23',
       description: 'A stylish smartwatch with fitness tracking features.',
       price: 149.99,
       createdAt: new Date(),
-      image: '/camisajapao.png'
+      image: '/barcelona.png'
     },
     {
-      title: 'Gaming Chair',
+      title: 'Camisa Fluminense 3 2012',
       description: 'An ergonomic gaming chair with lumbar support.',
       price: 249.99,
       createdAt: new Date(),
-      image: '/camisajapao.png'
+      image: '/flugrena.png'
     },
     {
-      title: 'Webcam',
+      title: 'Camisa Brasil 1 1994',
       description: 'A high-definition webcam for video conferencing.',
       price: 79.99,
       createdAt: new Date(),
-      image: '/camisajapao.png'
+      image: '/brasil.png'
     },
   ];
 

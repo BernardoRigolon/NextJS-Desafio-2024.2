@@ -15,7 +15,7 @@ export default async function Home() {
     <HeroSection />
       </div>
     <div className="w-full bg-[#038C00] h-5 hidden lg:block"></div>
-    <Carousel />
+    <Carousel posts={posts} />
     <div className="w-full bg-[#038C00] h-5"></div>
     <AboutUs />
     <div className="w-full bg-[#038C00] h-5"></div>
